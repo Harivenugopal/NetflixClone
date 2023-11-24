@@ -12,7 +12,7 @@ function App() {
     <Banner/>
     <Rowpost url={orginals} title='Netflix Oginals'/>
     <Rowpost url={action} title='Action' isSmall />
-    <Rowpost url={romance} title='Romance' isSmall />
+    <Rowpost url={romance} title='Comedy' isSmall />
 
     </div>
   );
