@@ -21,7 +21,6 @@ function Rowpost(props) {
     height: '390',
     width: '100%',
     playerVars: {
-      // https://developers.google.com/youtube/player_parameters
       autoplay: 0,
     },
   };
@@ -35,7 +34,7 @@ function Rowpost(props) {
       }
     })
   }
-  
+
   return (
     <div className='row'>
       <h2>{props.title}</h2>

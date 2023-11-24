@@ -1,5 +1,5 @@
 .navbar{
-    position: fixed;
+    position:fixed;
     top: 0;
     width: 100%;
     height: 30px;
@@ -13,10 +13,76 @@
     position: fixed;
     left: 20px;
     width: 48px;
-    
+    top: 1%;
+    cursor: pointer;
 }
+
+.logo:hover{
+    transform: scale(1.2);
+}
+
 .avatar{
     position: fixed;
     right: 20px;
     width: 30px;
+}
+
+.netflixsearch{
+    position: fixed;
+    right: 120px;
+    font-size: 17px;
+    border: 1px;
+    width: 40%;
+    height: 5%;
+    padding-left: 3%;
+    border-radius: 5px;
+}
+
+.submitbutton{
+    position: fixed;
+    margin-top: 8px;
+    margin-left: 83%;
+    width: 4%;
+    height: 3%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #111;
+}
+
+.submitbutton:hover{
+    color: cadetblue;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.notification{
+    position: fixed;
+    margin-top: 8px;
+    margin-left: 70%;
+    width: 1px;
+    height: 1px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: white;
+    background-size: 1px
+}
+
+.home{
+    position: fixed;
+    color: white;
+    background-color: black;
+    font-size: large;
+    border: none;
+    width: 2%;
+    height: 2%;
+    margin-left: 12%;
+    cursor: pointer;
+}
+
+.home:hover{
+  transform: scale(1.5);
+  background-color: #000000;
+  text-decoration: underline;
 }
