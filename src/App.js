@@ -12,7 +12,7 @@ function App() {
 
     <Routes>
     <Route path="/" element={<First/>} />
-          <Route path="/secondpage" element={<Secondpage />} />
+    <Route path="/secondpage" element={<Secondpage />} />
     </Routes>
 
     </Router>
