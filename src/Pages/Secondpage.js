@@ -3,6 +3,7 @@ import Navbar from '../components/navbar/Navbar'
 import { orginals,action,romance }from '../urls'
 import Banner from '../components/Banner/Banner'
 import Rowpost from '../components/Rowpost/Rowpost'
+import "../app.css"
 
 
 
