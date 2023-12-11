@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { API_KEY,imageUrl } from '../../Constants/Constants'
 import axios from '../../axios'
 import './Banner.css'
@@ -23,7 +24,9 @@ function Banner() {
      <div className='content'>
         <h1 className='title'>{movie ? movie.title:""}</h1>
         <div className='banner-buttons'>
+          <Link to="/playmovies">
             <button className='buttonn'>play</button>
+            </Link>
             <button className='buttonn'>mylist</button>
         </div>
         <h4 className='description'>{movie ? movie.overview:"" }</h4>

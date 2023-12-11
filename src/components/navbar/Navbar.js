@@ -17,6 +17,10 @@ function Navbar() {
     navigate('/');
   };
 
+  const onAvatarClick = () =>{
+    navigate('/avatarpage')
+  }
+
   return (
     <div className="navbar">
       <button type="button" className="home" onClick={onHomeClick}>
@@ -27,7 +31,7 @@ function Navbar() {
       </button>
 
       <img className="logo" src={netflixlogo} alt="netflix logo" onClick={onMoviesClick} />
-      <img className="avatar" src={avatar} alt="avatar logo" />
+      <img className="avatar" src={avatar} alt="avatar logo" onClick={onAvatarClick} />
       <div className="searchContainer">
         <input
           type="text"
