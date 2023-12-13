@@ -16,7 +16,7 @@ function App() {
     <Route path="/" element={<First/>} />
     <Route path="/secondpage" element={<Secondpage />} />
     <Route path="/avatarpage" element={<Avatarpage />} />
-    <Route path="/playmovies" element={<Playmovies />} />
+    <Route path="/playmovies/*" element={<Playmovies />} />
 
   </Routes>
 
