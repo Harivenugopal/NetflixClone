@@ -22,7 +22,6 @@ function Play() {
     <div className='parentplaydiv'>
       <h2>Video Player</h2>
       <YouTube videoId={urlId} opts={opts} />
-      <div className='content'></div>
       <div className='fadeBottam'></div>
     </div>
   );

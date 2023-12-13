@@ -29,6 +29,32 @@
     filter: brightness(100%) contrast(100%);
 }
 
+.text1{
+    font-size: 3em;
+}
+
+.text2{
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.button1{
+    height: 2.5em;
+    width: 20em;
+    background-color: red;
+    color: whitesmoke;
+    border: none;
+    font-size: larger;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.button1:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
 .netflixlogo{
 position: fixed;
     left: 20px;

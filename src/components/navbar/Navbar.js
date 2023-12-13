@@ -13,7 +13,7 @@ function Navbar() {
     navigate('/secondpage');
   };
 
-  const onMoviesClick = () => {
+  const onLogoClick = () => {
     navigate('/');
   };
 
@@ -21,16 +21,22 @@ function Navbar() {
     navigate('/avatarpage')
   }
 
+  const onMoviesClick = () =>{
+    navigate('/moviespage')
+  }
+
+
+
   return (
     <div className="navbar">
       <button type="button" className="home" onClick={onHomeClick}>
         HOME
       </button>
-      <button type="button" className="movieslist">
+      <button type="button" className="movieslist" onClick={onMoviesClick}>
         MOVIES
       </button>
 
-      <img className="logo" src={netflixlogo} alt="netflix logo" onClick={onMoviesClick} />
+      <img className="logo" src={netflixlogo} alt="netflix logo" onClick={onLogoClick} />
       <img className="avatar" src={avatar} alt="avatar logo" onClick={onAvatarClick} />
       <div className="searchContainer">
         <input
