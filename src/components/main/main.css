@@ -72,6 +72,9 @@
   .txt {
     font-size: 8vmin;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
     
@@ -88,6 +91,9 @@
   .txt {
     font-size: 6vmin;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
   }
 }
