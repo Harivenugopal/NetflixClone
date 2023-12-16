@@ -1,9 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+
+import menubar from '../Assests/menubar.png'
 import avatar from '../Assests/avatar.png';
 import netflixlogo from '../Assests/netflixlogo.png';
-import searchicon from '../Assests/searchicon.png';
-import notification from '../Assests/notification.png';
+
 import './Navbar.css';
 
 function Navbar() {
@@ -28,27 +29,24 @@ function Navbar() {
 
 
   return (
-    <div className="navbar">
-      <button type="button" className="home" onClick={onHomeClick}>
-        HOME
-      </button>
-      <button type="button" className="movieslist" onClick={onMoviesClick}>
-        MOVIES
-      </button>
+    <nav>
+      <input type="checkbox" id='check' />
+      <label For="check" className='checkbtn'>
+        <i className="" > <img src={menubar} className='menubarpic' alt="" /> </i>
+      </label>
+
 
       <img className="logo" src={netflixlogo} alt="netflix logo" onClick={onLogoClick} />
       <img className="avatar" src={avatar} alt="avatar logo" onClick={onAvatarClick} />
-      <div className="searchContainer">
-        <input
-          type="text"
-          placeholder="    Search..."
-          name="Search"
-          className="netflixsearch"
-        />
-        <img className="submitbutton" src={searchicon} alt="search icon" />
-        <img className="notification" src={notification} alt="" />
-      </div>
-    </div>
+      <input  type="text" placeholder="    Search..." name="Search" className="netflixsearch"/>
+       <ul className='menulist' > 
+      <li className="menu"  onClick={onHomeClick}>HOME</li>
+     <li className="menu"  onClick={onMoviesClick}> MOVIES </li>
+     </ul>
+
+
+     </nav>
+    
   );
 }
 

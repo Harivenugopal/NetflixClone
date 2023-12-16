@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+
 import { useNavigate } from 'react-router-dom';
 import YouTube from 'react-youtube';
 import { API_KEY, imageUrl } from '../../Constants/Constants';
@@ -54,7 +55,9 @@ const handleMoviePlay = (id) => {
         </div>
         <h4 className="description">{movie ? movie.overview : ''}</h4>
       </div>
-      <div className="fadeBottom"></div>
+      <div className="fadeBottom">
+        
+      </div>
     </div>
   );
 }

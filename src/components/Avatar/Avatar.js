@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './Avatar.css'
 import netflixlogo from '../Assests/netflixlogo.png'
 
+
 function Avatar() {
   return (
     <div className='bodyimage'>
@@ -16,6 +17,10 @@ function Avatar() {
       <br />
       <Link to="/secondpage"> 
       <button className='button1'>Enjoy free trial</button>
+      <br/>
+      bu
+
+
       </Link>
       </div>  
     </div>

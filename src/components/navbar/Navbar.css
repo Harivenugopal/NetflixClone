@@ -1,17 +1,23 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
 
-.navbar{
+nav{
     position:fixed;
     top: 0;
     width: 100%;
-    height: 30px;
+    height: 20px;
     padding: 20px;
-    display: flex;
+    display: ;
     justify-content: space-between;
     background-color: #111;
 }
 
 .logo{
-    position: fixed;
+  position: fixed;
     left: 20px;
     width: 48px;
     top: 1%;
@@ -20,90 +26,149 @@
 }
 
 .logo:hover{
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .avatar{
-    position: fixed;
-    right: 20px;
-    width: 30px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    cursor: pointer;
+  position: ;
+  margin-right: 50px;
+  margin-top: -3px;
+  width: 30px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  float: right;
 }
 
 .avatar:hover{
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
-
 
 .netflixsearch{
-    position: fixed;
-    right: 170px;
-    font-size: 17px;
-    border: 1px;
-    border-color: white;
-    width: 35%;
-    height: 5%;
-    padding-left: 3%;
-    border-radius: 2px;
+  position: fixed;
+  height: 5%;
+  width: 30%;
+   border-radius: 2px;
+   float:left;
+   margin-left: 350px;
+   margin-top: -5px;
+   border-style: none;
+}
+
+nav ul{
+  float: right;
+  margin-right: 50px;
 
 }
 
-.submitbutton{
-    position: fixed;
-    margin-top: 8px;
-    margin-left: 48.4%;
-    width: 2.5%;
-    height: 2.5%;
+.menu{
+  display: inline-block;
+  margin: 0 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 40px;
+  line-height:30px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.menu:hover{
+  background: black;
+  transform: scale(1.1);
+}
+
+.menubarpic{
+  width: 27px;
+  height: 22px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+.menubarpic:hover{
+  transform: scale(1.1);
+
 }
 
 
-.notification{
-    position: fixed;
-    margin-top: 8px;
-    margin-left: 90%;
-    width: 1.5em;
-    height: 1.5em;
-    border: none;
-    cursor: pointer;
-    background-color:#111; 
+
+.checkbtn{
+  font-size: 30px;
+  float: right;
+  line-height: 30px;
+  margin-right: 40px ;
+  display: none;
 }
 
-.home{
-    position: fixed;
-    color: white;
-    background-color: #111 ;
-    border: none;
-    font-weight: bold;
-    width: 4%;
-    height: 4%;
-    margin-left: 12%;
-    cursor: pointer;
-    border-radius: 10%;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.home:hover{
-  transform: scale(1.5);
-  box-shadow: 0 0 10px 5px #393e46;
-}
-
-.movieslist{
-    position: fixed;
-    color: white;
-    background-color: #111 ;
-    border: none;
-    font-weight: bold;
-    width: 4%;
-    height: 4%;
-    margin-left: 20%;
-    cursor: pointer;
-    border-radius: 10%;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.movieslist:hover{
-    transform: scale(1.5);
-    box-shadow: 0 0 10px 5px #393e46;
-  }
+#check{
+  display: none;
   
+}
+
+@media(max-width: 952px){
+  .logo{
+    font-size: 30px;
+    padding-left: 10px;
+  }
+  .netflixsearch{
+    height: 5%;
+    width: 40%;
+     border-radius: 2px;
+     float:left;
+     margin-left: 100px;
+     margin-top: -5px;
+     border-style: none;
+
+  }
+  .menu{
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 50vh;
+    background-color:#111;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all.0s;
+    line-height:30px;
+
+  }
+
+  .avatar{
+  text-align: center;
+  margin-right: 40px;
+  }
+  .menu{
+    display: block;
+  }
+  .menu{
+    font-size: 20px;
+  }
+    
+  .menu:hover{
+    background: #111;
+    color: white;
+  }
+  #check:checked ~ ul {
+    left: 0;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+

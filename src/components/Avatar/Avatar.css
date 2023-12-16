@@ -1,23 +1,26 @@
-.bodyimage{
-    margin: 0;
-    background-image: url('../Assests/allmovies.jpg') ;
-    background-size: cover;
-  overflow: hidden;
-  height: 100vh;
-  filter: brightness(100%) contrast(70%);
-  background-position: center;
-  align-items: center;
-}
+/* Common styles for all screen sizes */
 
-.textcontainer{
+.bodyimage {
+    margin: 0;
+    background-image: url('../Assests/allmovies.jpg');
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    filter: brightness(100%) contrast(70%);
+    background-position: center;
+    align-items: center;
+  }
+  
+  .textcontainer {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
-}
-.text{
+  }
+  
+  .text {
     color: white;
     text-align: center;
     display: flex;
@@ -27,18 +30,18 @@
     padding: 20px;
     border-radius: 10px;
     filter: brightness(100%) contrast(100%);
-}
-
-.text1{
+  }
+  
+  .text1 {
     font-size: 3em;
-}
-
-.text2{
+  }
+  
+  .text2 {
     font-size: 1em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.button1{
+  }
+  
+  .button1 {
     height: 2.5em;
     width: 20em;
     background-color: red;
@@ -47,24 +50,55 @@
     font-size: larger;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     border-radius: 5px;
-}
-
-.button1:hover{
+  }
+  
+  .button1:hover {
     background-color: black;
     color: white;
     cursor: pointer;
-}
-
-.netflixlogo{
-position: fixed;
+  }
+  
+  .netflixlogo {
+    position: fixed;
     left: 20px;
     width: 48px;
     top: 1%;
     cursor: pointer;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     filter: brightness(100%) contrast(100%);
-}
-
-.netflixlogo:hover{
+  }
+  
+  .netflixlogo:hover {
     transform: scale(1.2);
-}
+  }
+  
+  /* Responsive styles for tablets */
+  @media only screen and (max-width: 768px) {
+    .text1 {
+      font-size: 2em;
+    }
+  
+    .text2 {
+      font-size: 0.8em;
+    }
+  
+    .button1 {
+      width: 15em;
+    }
+  }
+  
+  /* Responsive styles for smartphones */
+  @media only screen and (max-width: 480px) {
+    .text1 {
+      font-size: 1.5em;
+    }
+  
+    .text2 {
+      font-size: 0.6em;
+    }
+  
+    .button1 {
+      width: 12em;
+    }
+  }
+  

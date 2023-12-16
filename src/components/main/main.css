@@ -1,9 +1,11 @@
+/* Common styles for all screen sizes */
+
 .background-container {
   background: radial-gradient(#fff, #aaa);
   background-size: 100vw 100vh;
   overflow: hidden;
   padding-top: 40vh;
-  height: 60vh; /* Set the height to cover the entire viewport */
+  height: 60vh;
 }
 
 .txt {
@@ -57,5 +59,35 @@
   100% {
     opacity: 1;
     color: #e90418;
+  }
+}
+
+/* Responsive styles for tablets */
+@media only screen and (max-width: 768px) {
+  .background-container {
+    padding-top: 30vh;
+    height: 70vh;
+  }
+
+  .txt {
+    font-size: 8vmin;
+    text-align: center;
+
+
+    
+  }
+}
+
+/* Responsive styles for smartphones */
+@media only screen and (max-width: 480px) {
+  .background-container {
+    padding-top: 20vh;
+    height: 80vh;
+  }
+
+  .txt {
+    font-size: 6vmin;
+    text-align: center;
+
   }
 }

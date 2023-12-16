@@ -1,37 +1,77 @@
+/* Common styles for all screen sizes */
 
-.row{
+.row {
     margin-left: 20px;
     color: #fff;
-}
-
-.rowposters{
+  }
+  
+  .rowposters {
     display: flex;
     padding: 20px;
     overflow-x: scroll;
     overflow-y: hidden;
     cursor: pointer;
-}
-
-.rowposters::-webkit-scrollbar{
+  }
+  
+  .rowposters::-webkit-scrollbar {
     display: none;
-}
-
-.poster{
+  }
+  
+  .poster {
     max-height: 200px;
-    margin-right: 10px;  
-}
-
-.poster:hover{
+    margin-right: 10px;
+  }
+  
+  .poster:hover {
     transform: scale(1.2);
     border-radius: 10px;
-}
-
-.smallposter{
+  }
+  
+  .smallposter {
     max-height: 150px;
     margin-right: 10px;
-}
-
-.smallposter:hover{
+  }
+  
+  .smallposter:hover {
     transform: scale(1.2);
     border-radius: 10px;
-}
+  }
+  
+  /* Responsive styles for tablets */
+  @media only screen and (max-width: 768px) {
+    .row {
+      margin-left: 10px; /* Adjust as needed for tablets */
+    }
+  
+    .rowposters {
+      padding: 10px;
+    }
+  
+    .poster {
+      max-height: 150px;
+    }
+  
+    .smallposter {
+      max-height: 100px;
+    }
+  }
+  
+  /* Responsive styles for smartphones */
+  @media only screen and (max-width: 480px) {
+    .row {
+      margin-left: 5px; /* Adjust as needed for smartphones */
+    }
+  
+    .rowposters {
+      padding: 5px;
+    }
+  
+    .poster {
+      max-height: 100px;
+    }
+  
+    .smallposter {
+      max-height: 75px;
+    }
+  }
+  

@@ -3,7 +3,7 @@ import Navbar from '../components/navbar/Navbar'
 import { orginals,action,romance }from '../urls'
 import Play from '../components/Play/Play'
 import Rowpost from '../components/Rowpost/Rowpost'
-import "../app.css"
+import "../App.css"
 
 function Playmovies() {
   return (
