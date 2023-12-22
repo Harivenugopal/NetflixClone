@@ -18,7 +18,7 @@ function Avatar() {
       <Link to="/secondpage"> 
       <button className='button1'>Enjoy free trial</button>
       <br/>
-      bu
+      
 
 
       </Link>

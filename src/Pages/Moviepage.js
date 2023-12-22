@@ -7,6 +7,8 @@ function Moviepage() {
   return (
     <div>
     <Navbar/>
+    <br/><br/><br/>     <br/>
+
 
      <Rowpost url={action} title='Action' isSmall />
         <Rowpost url={romance} title='Drama' isSmall />
