@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Netflixclone-react/static/css/main.5127d926.css",
+    "main.js": "/Netflixclone-react/static/js/main.53c1800a.js",
+    "static/media/allmovies.jpg": "/Netflixclone-react/static/media/allmovies.9b7dab38cb0333af960f.jpg",
+    "index.html": "/Netflixclone-react/index.html",
+    "main.5127d926.css.map": "/Netflixclone-react/static/css/main.5127d926.css.map",
+    "main.53c1800a.js.map": "/Netflixclone-react/static/js/main.53c1800a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5127d926.css",
+    "static/js/main.53c1800a.js"
+  ]
+}
